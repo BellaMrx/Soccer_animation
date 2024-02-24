@@ -156,7 +156,7 @@ body {
     animation-name: shootRight;
 }
 
-/* Object "bounces" */
+/* Object "Warning" */
 @keyframes moveAndBounce {
   0% {
     visibility: visible;
