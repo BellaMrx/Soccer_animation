@@ -1,2 +1,6 @@
 # Soccer_animation
- HTML, CSS, JavaScript
+ built with HTML, CSS, JavaScript
+
+The files are in the folders "Soccer" and "Images".
+
+
