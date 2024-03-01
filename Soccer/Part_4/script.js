@@ -1,0 +1,82 @@
+// Initialize user and computer scores
+let userScore = 0;
+let computerScore = 0;
+
+// Get the HTML elements with the IDs 'ball' and 'keeper' and assign them to variables
+let ball = document.getElementById('ball');
+let keeper = document.getElementById('keeper');
+
+// Function to make the ball shoot to the left
+function shootLeft() {
+    // Add the 'shootLeftAnime' class to the ball, triggering a left-shooting animation
+    ball.classList.add('shootLeftAnime');
+
+    // Set the transition for smooth movement / speed of the keeper
+    keeper.style.transition = 'transform 0.5s';
+
+    // Move the keeper to the left
+    keeper.style.transform = 'translate(100px, 70px)';
+
+    // Listen for the end of the 'shootLeftAnime' animation
+    ball.addEventListener('animationend', () => {
+        // Remove the 'shootLeftAnime' class once the animation ends to reset for future left shots
+        ball.classList.remove('shootLeftAnime');
+        
+        // Remove the transition after the ball animation
+        keeper.style.transition = '';
+    }, { once: true }); // Ensure the event listener is only triggered once
+}
+
+// Function to make the ball shoot to the center
+function shootCenter() {
+    // Add the 'shootCenterAnime' class to the ball, triggering a center-shooting animation
+    ball.classList.add('shootCenterAnime');
+
+    // Set the transition for smooth movement / speed of the keeper
+    keeper.style.transition = 'transform 0.5s';
+
+    // Move the keeper to the center
+    keeper.style.transform = 'translate(380px, 70px)';
+
+    // Listen for the end of the 'shootCenterAnime' animation
+    ball.addEventListener('animationend', () => {
+        // Remove the 'shootCenterAnime' class once the animation ends to reset for future center shots
+        ball.classList.remove('shootCenterAnime');
+
+        // Remove the transition after the ball animation
+        keeper.style.transition = '';
+    }, { once: true }); // Ensure the event listener is only triggered once
+}
+
+// Function to make the ball shoot to the right
+function shootRight() {
+    // Add the 'shootRightAnime' class to the ball, triggering a right-shooting animation
+    ball.classList.add('shootRightAnime');
+
+    // Set the transition for smooth movement / speed of the keeper
+    keeper.style.transition = 'transform 0.5s';
+
+    // Move the keeper to the right
+    keeper.style.transform = 'translate(660px, 70px)';
+
+    // Listen for the end of the 'shootRightAnime' animation
+    ball.addEventListener('animationend', () => {
+        // Remove the 'shootRightAnime' class once the animation ends to reset for future right shots
+        ball.classList.remove('shootRightAnime');
+
+        // Remove the transition after the ball animation
+        keeper.style.transition = '';
+    }, { once: true }); // Ensure the event listener is only triggered once
+}
+
+// Function to make the ball jump
+function jumpingBall() {
+    // Add the 'jumpingAnime' class to the ball, triggering a jumping animation
+    ball.classList.add('jumpingAnime');
+
+    // Listen for the end of the 'jumpingAnime' animation
+    ball.addEventListener('animationend', () => {
+        // Remove the 'jumpingAnime' class once the animation ends to reset for future jumps
+        ball.classList.remove('jumpingAnime');
+    }, { once: true }); // Ensure the event listener is only triggered once
+}
