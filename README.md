@@ -11,3 +11,10 @@ Part_3: Keeper inserted, animated with CSS (HTML, CSS)
 
 Part_4: Bounce removed, score inserted (HTML, not yet functional), keeper function via JS (CSS animation removed, start position kept)
 
+Part_5: Goalkeeper now makes a random movement
+
+Part_6: Score works, points are counted
+
+
+
+The full version can be played here [book-of-coding.com](https://book-of-coding.com/games.html#Soccer-link)
